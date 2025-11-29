@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImg from "../public/assets/images/x-profile.jpg";
+import profileImg from "../public/assets/images/profile.png";
 
 export default function Header() {
   return (
@@ -7,10 +7,9 @@ export default function Header() {
       <div className="flex justify-between w-full">
         <div className="flex flex-col justify-center">
           <div className="text-lg font-semibold">
-            YASHRAJ VERMA
-            <span className="pl-2 text-sm text-secondary/85">(he/him)</span>
+            HAIDER ALI
           </div>
-          <div className="text-sm text-secondary/60">@yashrajvrma</div>
+          <div className="text-sm text-secondary/60">@thehaiderali</div>
         </div>
 
         {/* like and views component component */}
@@ -30,13 +29,11 @@ export default function Header() {
           </div>
           <div className="text-primary-foreground">ii</div>
         </div> */}
-        <div className="border-2 border-border h-[80px] w-[80px]">
+        <div className=" h-[76px] w-[76px] rounded-full overflow-hidden">
           <Image
             src={profileImg}
             alt="profile-img"
-            // width={60}
-            // height={60}
-            className="w-full h-full"
+            className="w-full h-full object-cover"
             quality={100}
           />
         </div>

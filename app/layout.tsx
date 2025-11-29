@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const baseURL = "https://yashrajvrma.vercel.app/";
+const baseURL = "https://thehaiderali.vercel.app/";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,128 +16,53 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseURL),
-  title: "Yashraj Verma - Full Stack Developer | Portfolio",
+  title: "Haider Ali ",
   description:
-    "I'm Yashraj Verma a 20y/o developer pursuing B.E in Electronics and Telecommunication engineering. I love to build cool products that makes peoples live easier. I play, read books and create content for fun.",
+    "Haider Ali, a Data Science sophomore exploring AI, LLMs, and modern web technologies.",
   keywords: [
-    "Yashraj",
-    "Yashraj Verma",
-    "Breeze",
-    "Breeze AI",
-    "breezeai.live",
-    "Yashraj Verma Portfolio",
-    "Tcet",
-    "Yashraj Verma linkedin",
-    "Electronics and Telecommunication Engineer",
-    "Engineer from Mumbai",
-    "Mumbai",
-    "Kandivali",
-    "AI Powered Docs Editor",
-    "Breeze ai live - AI Powered Docs Editor",
-    "Yashraj Verma Twitter",
-    "yashrajvrma",
-    "Engineer",
-    "Yashraj Verma Engineer",
-    "Yashraj Verma Youtube",
+    "Haider Ali",
+    "Data Science",
+    "AI",
+    "LLMs",
+    "Web Development",
+    "Next.js",
+    "Portfolio",
   ],
-  twitter: {
-    card: "summary_large_image",
-    title: "Yashraj Verma - Full Stack Developer",
+  openGraph: {
+    title: "Haider Ali — Portfolio",
     description:
-      "I'm Yashraj Verma a 20 y/o developer pursuing B.E in Electronics and Telecommunication engineering. I love to build cool products that makes peoples live easier. I play, read books and create content for fun.",
+      "Haider Ali, a Data Science sophomore exploring AI, LLMs, and the modern web.",
+    url: baseURL,
+    siteName: "Haider Ali",
     images: [
       {
-        url: `${baseURL}/assets/images/twitter-og.png`,
+        url: "/assets/images/profile.png",
         width: 1200,
         height: 630,
-        alt: "Yashraj Verma Portfolio",
+        alt: "Haider Ali Portfolio",
       },
     ],
   },
-  openGraph: {
-    title: "Yashraj Verma - Full Stack Developer",
-    url: baseURL,
-    type: "website",
+  twitter: {
+    card: "summary_large_image",
+    title: "Haider Ali — Portfolio",
     description:
-      "I'm Yashraj Verma a 20 y/o developer pursuing B.E in Electronics and Telecommunication engineering. I love to build cool products that makes peoples live easier. I play, read books and create content for fun.",
-    images: [
-      {
-        url: `${baseURL}/assets/images/twitter-og.png`,
-        width: 1200,
-        height: 630,
-        alt: "Yashraj Verma Portfolio",
-      },
-    ],
+      "Haider Ali, a Data Science sophomore exploring AI, LLMs, and modern web technologies.",
+    images: ["/assets/images/profile.png"],
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <head>
-        <meta property="og:url" content="https://yashrajvrma.vercel.app/" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="robots" content="index, follow, nocache" />
-        <meta
-          name="googlebot"
-          content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
-        />
-        <meta name="referrer" content="origin-when-cross-origin" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Yashraj Verma - Full Stack Developer"
-        />
-        <meta
-          property="og:description"
-          content="I'm Yashraj Verma a 20 y/o developer pursuing B.E in Electronics and Telecommunication engineering. I love to build cool products that makes peoples live easier. I play, read books and create content for fun."
-        />
-        <meta name="creator" content="Yashraj Verma" />
-        <meta name="publisher" content="Yashraj Verma" />
-        <meta name="classification" content="Portfolio Website" />
-        <meta name="contact:email" content="yashrajv.work@gmail.com" />
-        <meta name="contact:locality" content="Mumbai" />
-        <meta name="contact:country_name" content="India" />
-        <meta name="contact:region" content="Maharashtra" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="og:image:width" content="1200" />
-        <meta name="og:image:height" content="630" />
-
-        <meta
-          name="keywords"
-          content="Full Stack Developer, React Developer, Node.js Developer, TypeScript Developer, JavaScript Developer, Frontend Developer, Backend Developer, Web Developer,Software Engineer, Portfolio,India, Yashraj Verma, Yashraj, Stealth Startup, Founding Engineer, Hackathon, Thakur College of Engineering and Technology, TCET, tcet, Best Portfolio, Minimalist Portfolio, Developer Portfolio, Student Portfolio, Tech Portfolio, Modern Portfolio, Clean Portfolio, Professional Portfolio, Portfolio Website, Personal Website, Developer Website, Breeze, Breeze AI, AI Powered Document Editor, Docs Editor, Word Docs Editor, Editor, Microsoft Word, Docx, AI"
-        />
-
-        <meta
-          property="og:image"
-          content="https://i.postimg.cc/tgzWv38x/localhost-3000-4.png"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@yashrajvrma" />
-        <meta name="twitter:creator" content="@yashrajvrma" />
-        <meta
-          name="twitter:title"
-          content="Yashraj Verma - Full Stack Developer"
-        />
-        <meta
-          name="twitter:description"
-          content="A 20 y/o Full Stack Developer pursuing B.E in Electronics and Telecommunication Engineering. I love to build cool products that makes peoples live easier."
-        />
-        <meta
-          name="twitter:image"
-          content="https://i.postimg.cc/tgzWv38x/localhost-3000-4.png"
-        />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <Analytics />
       </body>
     </html>
   );

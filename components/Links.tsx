@@ -13,18 +13,10 @@ export default function Links() {
       <div className="text-xs text-secondary">LINKS</div>
       <div className="flex flex-wrap sm:flex-nowrap justify-center items-center sm:max-w-xl max-w-sm gap-x-3">
         <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary p-3">
-          <Link
-            href="https://drive.google.com/file/d/1FXuZi3ve1ZRpR6_DuLSlzfX7lRP8WOlt/view?usp=drivesdk"
-            target="_blank"
-            className="flex items-center gap-x-1 hover:scale-110 transition duration-200 ease-in-out transform"
-          >
-            <ReadCvLogoIcon size={22} />
-            Resume
-          </Link>
         </button>
         <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary p-3">
           <Link
-            href="mailto:yashrajv.work@gmail.com"
+            href="hyder6291@gmail.com"
             target="_blank"
             className="flex items-center gap-x-1 hover:scale-110 transition duration-200 ease-in-out transform"
           >
@@ -34,7 +26,7 @@ export default function Links() {
         </button>
         <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary p-3">
           <Link
-            href="https://github.com/yashrajvrma"
+            href="https://github.com/thehaiderali"
             target="_blank"
             className="flex items-center gap-x-1 hover:scale-110 transition duration-200 ease-in-out transform"
           >
@@ -44,7 +36,7 @@ export default function Links() {
         </button>
         <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary p-3">
           <Link
-            href="https://x.com/yashrajvrma"
+            href="https://x.com/thehaderali"
             target="_blank"
             className="flex items-center gap-x-1 hover:scale-110 transition duration-200 ease-in-out transform"
           >
@@ -54,7 +46,7 @@ export default function Links() {
         </button>
         <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary p-3">
           <Link
-            href="https://www.linkedin.com/in/theyashrajverma/"
+            href="https://www.linkedin.com/in/thehaideraly/"
             target="_blank"
             className="flex items-center gap-x-1 hover:scale-110 transition duration-200 ease-in-out transform"
           >
