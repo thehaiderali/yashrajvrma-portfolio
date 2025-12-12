@@ -7,7 +7,7 @@ import './globals.css'
 // 1. IMPORT GOOGLE ANALYTICS COMPONENT
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const baseURL = "https://thehaiderali.vercel.app/";
+const baseURL = "https://thehaiderali.com/";
 const GA_MEASUREMENT_ID = "G-HHHH287R9N"; // Define your GA ID here or use a .env variable
 
 const geistSans = Geist({
