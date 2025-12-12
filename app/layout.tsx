@@ -1,8 +1,14 @@
+// app/layout.tsx
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import './globals.css'
+
+// 1. IMPORT GOOGLE ANALYTICS COMPONENT
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const baseURL = "https://thehaiderali.vercel.app/";
+const GA_MEASUREMENT_ID = "G-HHHH287R9N"; // Define your GA ID here or use a .env variable
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,6 +70,9 @@ export default function RootLayout({
       >
         {children}
       </body>
+      
+      {/* 2. ADD THE GOOGLE ANALYTICS TAG */}
+      <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
     </html>
   );
 }
