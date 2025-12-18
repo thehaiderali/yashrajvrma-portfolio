@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   metadataBase: new URL(baseURL),
   title: {
-    default: "Haider Ali | Data Science & AI Portfolio",
+    default: "Haider Ali | Data Science & AI ",
     template: "%s | Haider Ali"
   },
   description: "Personal portfolio of Haider Ali. Building and exploring projects in Data Science, AI, and modern web development.",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Haider Ali | Data Science & AI Portfolio",
+    title: "Haider Ali | Data Science & AI ",
     description: "Building and exploring the intersection of AI, LLMs, and the modern web.",
     url: baseURL,
     siteName: "Haider Ali",
