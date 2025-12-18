@@ -34,8 +34,6 @@ export const metadata: Metadata = {
     "Next.js",
     "Portfolio",
   ],
-  manifest: "/site.webmanifest",
-
 
   // ✅ REQUIRED FOR GOOGLE SEARCH ICON
   icons: {
