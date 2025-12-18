@@ -13,10 +13,8 @@ export default function Links() {
       <div className="text-xs text-secondary">LINKS</div>
       <div className="flex flex-wrap sm:flex-nowrap justify-center items-center sm:max-w-xl max-w-sm gap-x-3">
         <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary p-3">
-        </button>
-        <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary p-3">
           <Link
-            href="hyder6291@gmail.com"
+            href="mailto:hyder6291@gmail.com"
             target="_blank"
             className="flex items-center gap-x-1 hover:scale-110 transition duration-200 ease-in-out transform"
           >
