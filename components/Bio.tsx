@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function Bio() {
   return (
@@ -6,7 +5,7 @@ export default function Bio() {
   <div>ai • web • data • llms</div>
   <br />
   <div>
-    I&apos;m Haider Ali . Exploring data science,
+     Exploring data science,
     large language models, and web technologies to build practical, modern
     solutions. Always learning. Always shipping.
   </div>

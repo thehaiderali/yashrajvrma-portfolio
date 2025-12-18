@@ -6,8 +6,8 @@ export default function Header() {
     <div className="flex py-4 gap-x-2">
       <div className="flex justify-between w-full">
         <div className="flex flex-col justify-center">
-          <div className="text-lg font-semibold">
-            HAIDER ALI
+          <div className="text-2xl font-semibold">
+           Haider Ali
           </div>
           <div className="text-sm text-secondary/60">@thehaiderali</div>
         </div>
