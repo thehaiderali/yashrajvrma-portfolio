@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   metadataBase: new URL(baseURL),
   title: {
-    default: "Haider Ali | Data Science & AI ",
+    default: "Haider Ali  ",
     template: "%s | Haider Ali"
   },
   description: "Personal portfolio of Haider Ali. Building and exploring projects in Data Science, AI, and modern web development.",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Haider Ali | AI & Data Science",
+    title: "Haider Ali ",
     description: "Documenting my journey in Data Science, AI, and web development.",
     images: ["/assets/images/profile.png"],
   },
