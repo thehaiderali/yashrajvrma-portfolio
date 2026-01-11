@@ -15,8 +15,8 @@ export default function BlogPage() {
 
           <div className="flex-1 flex flex-col px-6 py-8">
             <div className="mb-8">
-              <h1 className="text-2xl font-bold mb-2">Blog</h1>
-              <p className="text-primary-foreground/60 text-xs">Thoughts on tech, learning, and creative writing</p>
+              <h1 className="text-3xl font-bold mb-2">Blog</h1>
+              <p className="text-primary-foreground/60 text-md">Thoughts on tech, learning, and creative writing</p>
             </div>
 
             <div className="space-y-4">
@@ -26,17 +26,17 @@ export default function BlogPage() {
   className="p-4 hover:bg-secondary transition-colors group"
 >
   <Link href={`/blog/${blog.slug}`} className="block">
-    <h2 className="font-bold mb-2 group-hover:underline group-hover:text-black">
+    <h2 className="font-bold mb-2 text-lg group-hover:underline group-hover:text-black">
       {blog.title}
     </h2>
-    <p className="text-primary-foreground/50 text-xs mb-3 group-hover:text-black">
+    <p className="text-primary-foreground/50 text-md mb-3 group-hover:text-black">
       {new Date(blog.dateAdded).toLocaleDateString("en-US", {
         year: "numeric",
         month: "short",
         day: "numeric",
       })}
     </p>
-    <p className="text-primary-foreground/70 text-xs leading-relaxed line-clamp-3 group-hover:text-black">
+    <p className="text-primary-foreground/70 text-md leading-relaxed line-clamp-3 tracking-wide group-hover:text-black">
       {blog.brief}
     </p>
   </Link>
