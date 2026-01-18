@@ -7,15 +7,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseURL,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly', // Increased from monthly to encourage faster crawls
       priority: 1,
     },
-    // When you add a projects page, just add another object like this:
-    // {
-    //   url: `${baseURL}/projects`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'weekly',
-    //   priority: 0.8,
-    // },
+    {
+      url: `${baseURL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
   ]
 }
