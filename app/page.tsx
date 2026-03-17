@@ -1,8 +1,7 @@
-// HOME PAGE
+
 import Bio from "@/components/Bio";
 import Header from "@/components/Header";
 import Links from "@/components/Links";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
